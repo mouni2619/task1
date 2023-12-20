@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference of http1.1 and http2</title>
+    
+</head>
+<body>
+    <h3>The Differences Between HTTP/1.1 and HTTP/2</h3>
+
+<h5><u>1)Basics:</u></h5>
+
+HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the World Wide Web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to different commands.
+
+<h5><u>HTTP/1.1:</u></h5>
+
+The older version, widely used since the late '90s.
+Sends and receives one request at a time, in a sequential manner.
+Requires multiple connections to load different resources, leading to potential latency issues.
+<h5><u>HTTP/2:</u></h5>
+
+The newer version, introduced to address limitations in HTTP/1.1.
+Allows for multiple concurrent requests and responses through a single connection.
+Designed to improve speed and efficiency in loading web pages.
+<h5><u>2)Multiplexing:</u></h5>
+
+<h5><u>HTTP/1.1:</u></h5>
+
+Each resource (image, stylesheet, script) requires a separate connection.
+Limited parallelism, leading to slower page loading times.
+Head-of-line blocking can occur, where a slow-loading resource delays the loading of subsequent resources.
+<h5><u>HTTP/2:</u></h5>
+
+Employs multiplexing, allowing multiple streams (requests and responses) to be sent concurrently over a single connection.
+Significantly reduces latency and improves the overall loading speed of a webpage.
+No head-of-line blocking, meaning faster and more efficient data transmission.
+<h5><u>3)Header Compression:</u></h5>
+
+<h5><u>HTTP/1.1:</u></h5>
+
+Headers (metadata about the request or response) are often redundant and not compressed.
+Each request carries a set of headers, leading to increased data overhead.
+<h5><u>HTTP/2:</u></h5>
+
+Utilizes header compression to reduce redundant information.
+Reduces the amount of data transmitted, resulting in faster page loading times.
+More efficient use of network resources.
+<h5><u>4)Prioritization:</u></h5>
+
+<h5><u>HTTP/1.1:</u></h5>
+
+All resources are treated equally in terms of priority.
+No explicit mechanism for indicating the importance of one resource over another.
+<h5><u>HTTP/2:</u></h5>
+
+Introduces stream prioritization, allowing developers to specify the importance of different resources.
+Enables the browser to prioritize critical resources, enhancing the user experience.
+<h5><u>Conclusion:</u></h5>
+
+In the ever-evolving landscape of the internet, protocols like HTTP play a crucial role in shaping our online experience. While HTTP/1.1 has been a reliable workhorse for many years, HTTP/2 brings welcome improvements in terms of speed, efficiency, and resource utilization. As we continue to embrace advancements in web technology, understanding these differences empowers both developers and users to make informed decisions for a faster and smoother online journey.
+</body>
+</html>
